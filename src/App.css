@@ -12,7 +12,7 @@
   justify-content: flex-end;
   padding: 1rem;
 
-  background: #8da47e;
+  background: #7C98AB;
   color: #ffffff;
   font-size: calc(10px + 1vmin);
 
@@ -40,7 +40,6 @@
 
 main {
 
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 1rem;
 
 }

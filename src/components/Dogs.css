@@ -1,0 +1,64 @@
+.Dogs {
+
+  text-align: center;
+
+}
+
+main {
+
+  display: flex;
+  flex-direction: column wrap;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.DogItem {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 6rem;
+
+  margin: 0.5rem;
+
+  background: transparent;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+
+}
+
+.DogItem .title {
+
+  margin: 0px;
+  margin-top: 0.75rem;
+
+  color: #000000;
+  font-weight: bold;
+  font-size: calc(10px + 1.2vmin);
+
+}
+
+.DogItem p {
+
+  margin: 0px;
+  margin-top: 0.1rem;
+
+  color: #000000;
+  font-size: calc(10px + 0.4vmin);
+
+}
+
+.DogItem img {
+
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  border: 0.25rem solid #CECDCE;
+  border-radius: 50%;
+  box-shadow: 0.1rem 0.2rem 0.2rem #b2b2b2;
+
+}

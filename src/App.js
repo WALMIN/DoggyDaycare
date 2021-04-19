@@ -5,7 +5,7 @@ import Dogs from './components/Dogs';
 
 function App() {
   const HOME = 'home', DOGS = 'dogs';
-  const [currentScreen, setCurrentScreen] = useState(HOME);
+  const [currentScreen, setCurrentScreen] = useState(DOGS);
 
   let content = null;
   switch(currentScreen) {
