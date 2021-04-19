@@ -1,5 +1,46 @@
 .App {
 
-  text-align: center;
+  text-align: left;
+
+}
+
+.Header {
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 1rem;
+
+  background: #8da47e;
+  color: #ffffff;
+  font-size: calc(10px + 1vmin);
+
+}
+
+.Header h2 {
+
+  margin: auto auto auto 0;
+
+}
+
+.Header button {
+
+  display: inline-block;
+  height: 100%;
+  margin-left: 1rem;
+
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: calc(10px + 1vmin);
+  cursor: pointer;
+
+}
+
+main {
+
+  padding-left: 1rem;
+  padding-right: 1rem;
 
 }
