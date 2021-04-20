@@ -51,6 +51,8 @@
   border: none;
   border-radius: 1rem;
   cursor: pointer;
+  color: #000000;
+  text-decoration: none;
 
 }
 
@@ -71,7 +73,6 @@
   margin: 0px;
   margin-top: 0.75rem;
 
-  color: #000000;
   font-weight: bold;
   font-size: calc(10px + 1.2vmin);
 
@@ -82,7 +83,6 @@
   margin: 0px;
   margin-top: 0.1rem;
 
-  color: #000000;
   font-size: calc(10px + 0.4vmin);
 
 }

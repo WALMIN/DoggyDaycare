@@ -1,10 +1,11 @@
-import './App.css';
-import { useState } from 'react';
-import Home from './components/Home';
-import Dogs from './components/Dogs';
+import "./App.css";
+import { useState } from "react";
+import Home from "./components/Home";
+import Register from "./components/Register";
+import {Route, BrowserRouter as Router, Link} from "react-router-dom"
 
 function App() {
-  const HOME = 'home', DOGS = 'dogs';
+  const HOME = "home", REGISTER = "register";
   const [currentScreen, setCurrentScreen] = useState(HOME);
 
   let content = null;
@@ -14,8 +15,8 @@ function App() {
 
       break;
 
-    case DOGS:
-      content = <Dogs />
+    case REGISTER:
+      content = <Register />
 
       break;
 
@@ -25,18 +26,18 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <header>
-        <h2>Doggy Daycare</h2>
-        <nav>
-          <button onClick={ () => setCurrentScreen(HOME) }>Home</button>
-          <button onClick={ () => setCurrentScreen(DOGS) }>Dogs</button>
-        </nav>
-      </header>
-      <main>
-        {content}
-      </main>
-    </div>
+    <Router>
+      <div className="App">
+        <header>
+          <h2>Doggy Daycare</h2>
+        </header>
+
+        <main>
+          <Route path="/" exact component={Home} />
+          <Route path="/register" component={Register} />
+        </main>
+      </div>
+    </Router>
   );
 }
 

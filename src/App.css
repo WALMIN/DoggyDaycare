@@ -24,7 +24,7 @@
 
 }
 
-.App header button {
+.App header .NavigationButton {
 
   display: inline-block;
   height: 100%;
@@ -34,6 +34,7 @@
   border: none;
   color: #ffffff;
   font-size: calc(10px + 1vmin);
+  text-decoration: none;
   cursor: pointer;
 
 }

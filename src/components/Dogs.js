@@ -1,6 +1,7 @@
 import './Dogs.css';
 import { useState } from 'react';
-import DogsData from ".././data/dogs.json";
+import DogsData from "../data/dogs.json";
+import {Link} from "react-router-dom";
 
 function Dogs(){
   const [search, setSearch] = useState("");
@@ -21,18 +22,18 @@ function Dogs(){
             }
 
           }).map((dog, key)=> (
-            <button className="DogItem" key={key} onClick={ console.log("Yeah") }>
+            <Link className="DogItem" key={key} to={{pathname: "/dog", dog: { data: dog }}}>
               <img src={dog.img} />
               <div>
                 <p className="title">{dog.name}</p>
                 <p>{dog.owner.name}<br />{dog.owner.lastName}</p>
               </div>
-            </button>
+            </Link>
           ))
         }
       </main>
     </div>
-  )
+  );
 }
 
 export default Dogs;
