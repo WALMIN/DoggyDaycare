@@ -4,7 +4,7 @@
 
 }
 
-.Header {
+.App header {
 
   display: flex;
   flex-direction: row;
@@ -12,19 +12,19 @@
   justify-content: flex-end;
   padding: 1rem;
 
-  background: #7C98AB;
+  background: var(--primary-color);
   color: #ffffff;
   font-size: calc(10px + 1vmin);
 
 }
 
-.Header h2 {
+.App header h2 {
 
   margin: auto auto auto 0;
 
 }
 
-.Header button {
+.App header button {
 
   display: inline-block;
   height: 100%;
@@ -38,7 +38,13 @@
 
 }
 
-main {
+.App header button:focus {
+
+  outline: none;
+
+}
+
+.App main {
 
   padding: 1rem;
 

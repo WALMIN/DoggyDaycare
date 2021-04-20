@@ -7,9 +7,7 @@ function Dogs(){
 
   return(
     <div className="Dogs">
-      <header>
-        <input type="search" placeholder="Search by name or owner..." onChange={event => { setSearch(event.target.value) }} />
-      </header>
+      <input type="search" placeholder="Search by name or owner..." onChange={event => { setSearch(event.target.value) }} />
       <main>
         {DogsData.filter((dog) => {
             if(search == ""){

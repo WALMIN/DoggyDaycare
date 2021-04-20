@@ -26,7 +26,7 @@ function App() {
 
   return (
     <div className="App">
-      <header className="Header">
+      <header>
         <h2>Doggy Daycare</h2>
         <nav>
           <button onClick={ () => setCurrentScreen(HOME) }>Home</button>
