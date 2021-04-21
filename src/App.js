@@ -29,7 +29,10 @@ function App() {
     <Router>
       <div className="App">
         <header>
-          <h2>Doggy Daycare</h2>
+          <Link className="Logo" to="/">
+            <img src="images/doggy-daycare.png" />
+            <h2>Doggy Daycare</h2>
+          </Link>
         </header>
 
         <main>

@@ -1,0 +1,88 @@
+.Home {
+
+  display: flex;
+  flex-direction: column;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+
+  height: calc(100vh - 7.5vh);
+
+}
+
+.Home main {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+
+}
+
+.Home .Title {
+
+  margin: 0;
+
+  color: #ffffff;
+  font-size: calc(10px + 1.75vmin);
+  font-weight: bold;
+
+}
+
+.Home .Text {
+
+  margin: 0;
+  margin-bottom: 2.5rem;
+
+  color: #ffffff;
+  font-size: calc(10px + 1.70vmin);
+
+}
+
+.Home .Button {
+
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+
+  background: var(--primary-color);
+  border: 0.2rem solid var(--primary-color);
+  color: #ffffff;
+  border-radius: 0.2rem;
+  font-size: calc(10px + 1.25vmin);
+  text-decoration: none;
+  cursor: pointer;
+
+}
+
+.Home .Button2 {
+
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+
+  background: #ffffff;
+  border: 0.2rem solid var(--primary-color);
+  color: var(--primary-color);
+  border-radius: 0.25rem;
+  font-size: calc(10px + 1.25vmin);
+  text-decoration: none;
+  cursor: pointer;
+
+}
+
+.App footer {
+
+  color: #ffffff;
+  text-align: left;
+
+}
+
+.App footer a {
+
+  color: var(--accent-color);
+  text-decoration: none;
+
+}
