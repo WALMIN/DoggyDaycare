@@ -11,10 +11,14 @@
   padding: 0.75rem 1.5rem;
   margin-bottom: 0.75rem;
 
-  background: var(--accent-color);
+  background: var(--background-color);
   border: none;
   border-radius: 0.2rem;
-  color: #ffffff;
+  color: #00000;
+
+  border: 0.5vh solid #ffffff;
+  border-radius: 2vh;
+  box-shadow: 1vh 2vh 4vh #999999;
 
 }
 
@@ -45,10 +49,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-around;
   width: 6rem;
 
-  margin: 0.5rem;
+  margin: 1rem;
 
   background: transparent;
   border: none;
@@ -95,8 +99,9 @@
   width: 6rem;
   height: 6rem;
   object-fit: cover;
-  border: 0.2rem solid var(--accent-color);
+
+  border: 0.5vh solid #ffffff;
   border-radius: 50%;
-  box-shadow: 0.1rem 0.2rem 0.2rem #b2b2b2;
+  box-shadow: 1vh 2vh 4vh #999999;
 
 }

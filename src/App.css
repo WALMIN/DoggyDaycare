@@ -8,6 +8,7 @@
 .App header {
 
   height: 7.5vh;
+  box-shadow: 0.2vh 0.4vh 0.8vh #999999;
 
 }
 
@@ -20,7 +21,7 @@
 
   height: 7.5vh;
 
-  background: var(--primary-color);
+  background: var(--primarydark-color);
   color: #ffffff;
   font-size: calc(10px + 1vmin);
   text-decoration: none;

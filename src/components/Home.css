@@ -48,8 +48,8 @@
   margin: 0.5rem;
   padding: 0.5rem 1rem;
 
-  background: var(--primary-color);
-  border: 0.2rem solid var(--primary-color);
+  background: var(--primarydark-color);
+  border: 0.2rem solid var(--primarydark-color);
   color: #ffffff;
   border-radius: 0.2rem;
   font-size: calc(10px + 1.25vmin);
@@ -64,8 +64,8 @@
   padding: 0.5rem 1rem;
 
   background: #ffffff;
-  border: 0.2rem solid var(--primary-color);
-  color: var(--primary-color);
+  border: 0.2rem solid var(--primarydark-color);
+  color: var(--primarydark-color);
   border-radius: 0.25rem;
   font-size: calc(10px + 1.25vmin);
   text-decoration: none;
