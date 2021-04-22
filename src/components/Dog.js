@@ -2,7 +2,7 @@ import './Dog.css';
 import { useState } from 'react';
 
 const Dog = (props) => {
-  const [data, setData] = useState(props.location.dog.data);
+  const [data] = useState(props.location.dog.data);
 
   return(
     <div className="Dog">

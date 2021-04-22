@@ -6,8 +6,11 @@
 }
 
 .LoadingLogo {
+
   height: 25vh;
+  margin-top: 5vh;
   pointer-events: none;
+
 }
 
 @media (prefers-reduced-motion: no-preference) {
