@@ -6,6 +6,7 @@ const Dog = (props) => {
 
   return(
     <div className="Dog">
+
       <main>
         <img className="DogImage" src={data.img} />
 
@@ -21,7 +22,7 @@ const Dog = (props) => {
           </div>
 
           <div className="Item">
-            <a href={"https://en.wikipedia.org/wiki/" + data.breed} target="_blank">
+            <a href={"https://www.petfinder.com/dog-breeds/" + data.breed} target="_blank">
               <p className="Title">Breed</p>
               <div className="Content">
                 <p>{data.breed}</p>
