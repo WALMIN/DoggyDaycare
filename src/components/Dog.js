@@ -1,63 +1,81 @@
 import './Dog.css';
-import { useState } from 'react';
+import { Link, useParams } from "react-router-dom";
+import { FetchData } from "../FetchData"
 
 const Dog = (props) => {
-  const [data] = useState(props.location.dog.data);
+  let { chipNumber } = useParams();
+  const { data, dataLoading } = FetchData("https://api.jsonbin.io/b/607eb43024143e5df089b745");
 
   return(
     <div className="Dog">
+      {dataLoading ?
+        <div>
+          <p>Loading...</p>
+        </div>
+        :
+        data.filter((dog) => {
+          if(dog.chipNumber.toLowerCase().includes(chipNumber.toLowerCase())){
+            return dog
 
-      <main>
-        <img className="DogImage" src={data.img} />
+          } else {
+            return null
 
-        <h1>{data.name}</h1>
+          }
 
-        <div className="DogInfo">
-          <div className="Item">
-            <p className="Title">Sex</p>
-            <div className="Content">
-              <p>{data.sex}</p>
-              <img src={data.sex == "female" ? "images/female.svg" : "images/male.svg"} />
-            </div>
-          </div>
+        })
+        .map((dog, key)=> (
+          <main key={key}>
+            <img className="DogImage" src={dog.img} alt="dog" />
 
-          <div className="Item">
-            <a href={"https://www.petfinder.com/dog-breeds/" + data.breed} target="_blank">
-              <p className="Title">Breed</p>
-              <div className="Content">
-                <p>{data.breed}</p>
-                <img src="images/help.svg" />
+            <h1>{dog.name}</h1>
+
+            <div className="DogInfo">
+              <div className="Item">
+                <p className="Title">Sex</p>
+                <div className="Content">
+                  <p>{dog.sex}</p>
+                  <img src={dog.sex === "female" ? "../images/female.svg" : "../images/male.svg"} alt="sex" />
+                </div>
               </div>
-            </a>
-          </div>
 
-          <div className="Item">
-            <p className="Title">Age</p>
-            <p>{data.age} {data.age > 1 ? "years" : "year"}</p>
-          </div>
+              <div className="Item">
+                <a href={"https://www.petfinder.com/dog-breeds/" + dog.breed} target="_blank" rel="noopener noreferrer">
+                  <p className="Title">Breed</p>
+                  <div className="Content">
+                    <p>{dog.breed}</p>
+                    <img src="../images/help.svg" alt="help" />
+                  </div>
+                </a>
+              </div>
 
-          <div className="Item" style={{ background: data.present == true ? "#CCD4BF" : "#EEBAB2" }}>
-            <p className="Title">Present</p>
-            <p>{data.present == true ? "Yes" : "No"}</p>
-          </div>
+              <div className="Item">
+                <p className="Title">Age</p>
+                <p>{dog.age} {dog.age > 1 ? "years" : "year"}</p>
+              </div>
 
-        </div>
+              <div className="Item" style={{ background: dog.present === true ? "#CCD4BF" : "#EEBAB2" }}>
+                <p className="Title">Present</p>
+                <p>{dog.present === true ? "Yes" : "No"}</p>
+              </div>
 
-        <div className="OwnerInfo">
-          <div className="Content">
-            <img src="images/owner.svg" />
-            <div>
-              <p className="Title">{data.owner.name} {data.owner.lastName}</p>
-              <p className="Text">{data.owner.phoneNumber}</p>
             </div>
-            <a href={"tel:" + data.owner.phoneNumber}>
-            <img className="Call" src="images/phone.svg" />
-            </a>
-          </div>
-        </div>
 
-        <p className="DogChip">Chip number: {data.chipNumber}</p>
-      </main>
+            <div className="OwnerInfo">
+              <div className="Content">
+                <img src="../images/owner.svg" alt="owner" />
+                <div>
+                  <p className="Title">{dog.owner.name} {dog.owner.lastName}</p>
+                  <p className="Text">{dog.owner.phoneNumber}</p>
+                </div>
+                <a href={"tel:" + dog.owner.phoneNumber}>
+                  <img className="Call" src="../images/phone.svg" alt="phone" />
+                </a>
+              </div>
+            </div>
+
+            <p className="DogChip">Chip number: {dog.chipNumber}</p>
+          </main>
+        ))}
     </div>
   )
 }

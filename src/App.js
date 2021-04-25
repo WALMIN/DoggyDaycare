@@ -1,7 +1,8 @@
 import "./App.css";
 import Home from "./components/Home";
-import Register from "./components/Register";
-import {Route, BrowserRouter as Router, Link} from "react-router-dom"
+import Dogs from "./components/Dogs";
+import Dog from "./components/Dog";
+import { Route, BrowserRouter as Router, Link } from "react-router-dom"
 
 function App() {
   return (
@@ -9,14 +10,15 @@ function App() {
       <div className="App">
         <header>
           <Link className="Logo" to="/">
-            <img src="images/doggy-daycare.png" alt="logo" />
+            <img src="/images/doggy-daycare.png" alt="logo" />
             <h2>Doggy Daycare</h2>
           </Link>
         </header>
 
         <main>
-          <Route path="/" exact component={Home} />
-          <Route path="/register" component={Register} />
+          <Route path="/" exact> <Home /> </Route>
+          <Route path="/register"> <Dogs /> </Route>
+          <Route path="/dog/:chipNumber"> <Dog /> </Route>
         </main>
       </div>
     </Router>

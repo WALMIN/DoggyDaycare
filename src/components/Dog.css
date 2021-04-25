@@ -169,6 +169,8 @@
 
   margin: 0px;
   margin-bottom: 0.5rem;
+  padding: 0px;
+  padding-right: 7rem;
 
   font-size: calc(10px + 1vmin);
   line-height: calc(10px + 1vmin);
@@ -179,6 +181,8 @@
 .Dog .OwnerInfo .Text {
 
   margin: 0px;
+  padding: 0px;
+  padding-right: 7rem;
 
   font-size: calc(10px + 0.75vmin);
   line-height: calc(10px + 0.75vmin);
@@ -190,7 +194,6 @@
 
   width: calc(10px + 2.5vmin);
   height: auto;
-  margin-left: 9rem;
   padding: 0.25rem;
 
   background: #CCD4BF;
