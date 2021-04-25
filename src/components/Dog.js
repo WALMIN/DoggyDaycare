@@ -25,9 +25,10 @@ const Dog = (props) => {
         })
         .map((dog, key)=> (
           <main key={key}>
-            <img className="DogImage" src={dog.img} alt="dog" />
-
-            <h1>{dog.name}</h1>
+            <div>
+              <img className="DogImage" src={dog.img} alt="dog" />
+              <h1>{dog.name}</h1>
+            </div>
 
             <div className="DogInfo">
               <div className="Item">

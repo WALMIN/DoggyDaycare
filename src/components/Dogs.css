@@ -36,17 +36,14 @@
 
 .Dogs input[type=search] {
 
-  width: 50vw;
-  padding: 0.75rem 1.5rem;
-  margin-bottom: 0.75rem;
+  width: 75vw;
+  padding: 1.5vh 2.5vh;
+  margin-bottom: 2vh;
 
   background: var(--background-color);
-  border: none;
-  border-radius: 0.2rem;
-  color: #00000;
-
   border: 0.5vh solid #ffffff;
-  border-radius: 2vh;
+  border-radius: 0.5vmin;
+  color: #00000;
   box-shadow: 1vh 2vh 4vh #999999;
 
 }
@@ -79,13 +76,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  width: 6rem;
+  width: 22vmin;
 
-  margin: 1rem;
+  margin: 0.75vh;
 
-  background: transparent;
-  border: none;
-  border-radius: 1rem;
   cursor: pointer;
   color: #000000;
   text-decoration: none;
@@ -100,14 +94,14 @@
 
 .DogItem:active {
 
-  transform: translate3d(0.05rem, 0.05rem, 0);
+  transform: translate3d(0.1vh, 0.1vh, 0);
 
 }
 
 .DogItem .title {
 
   margin: 0px;
-  margin-top: 0.75rem;
+  margin-top: 1vh;
 
   font-weight: bold;
   font-size: calc(10px + 1.2vmin);
@@ -117,16 +111,16 @@
 .DogItem p {
 
   margin: 0px;
-  margin-top: 0.1rem;
+  margin-top: 0.2vh;
 
-  font-size: calc(10px + 0.4vmin);
+  font-size: calc(10px + 0.5vmin);
 
 }
 
 .DogItem img {
 
-  width: 6rem;
-  height: 6rem;
+  width: 20vmin;
+  height: 20vmin;
   object-fit: cover;
 
   border: 0.75vh solid #ffffff;

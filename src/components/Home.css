@@ -28,7 +28,7 @@
   margin: 0;
 
   color: #ffffff;
-  font-size: calc(10px + 1.75vmin);
+  font-size: calc(10px + 2vmin);
   font-weight: bold;
 
 }
@@ -36,22 +36,22 @@
 .Home .Text {
 
   margin: 0;
-  margin-bottom: 2.5rem;
+  margin-bottom: 10vmin;
 
   color: #ffffff;
-  font-size: calc(10px + 1.70vmin);
+  font-size: calc(10px + 1.75vmin);
 
 }
 
 .Home .Button {
 
-  margin: 0.5rem;
-  padding: 0.5rem 1rem;
+  margin: 2vmin;
+  padding: 1vmin 2vmin;
 
   background: var(--primarydark-color);
-  border: 0.2rem solid var(--primarydark-color);
+  border: 0.5vmin solid var(--primarydark-color);
   color: #ffffff;
-  border-radius: 0.2rem;
+  border-radius: 0.5vmin;
   font-size: calc(10px + 1.25vmin);
   text-decoration: none;
   cursor: pointer;
@@ -60,13 +60,13 @@
 
 .Home .Button2 {
 
-  margin: 0.5rem;
-  padding: 0.5rem 1rem;
+  margin: 2vmin;
+  padding: 1vmin 2vmin;
 
   background: #ffffff;
-  border: 0.2rem solid var(--primarydark-color);
+  border: 0.5vmin solid var(--primarydark-color);
   color: var(--primarydark-color);
-  border-radius: 0.25rem;
+  border-radius: 0.5vmin;
   font-size: calc(10px + 1.25vmin);
   text-decoration: none;
   cursor: pointer;
@@ -75,7 +75,11 @@
 
 .App footer {
 
+  margin-bottom: 0.5vmin;
+  margin-left: 0.5vmin;
+
   color: #ffffff;
+  font-size: calc(10px + 0.75vmin);
   text-align: left;
 
 }
