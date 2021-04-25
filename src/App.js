@@ -11,7 +11,7 @@ function App() {
       <div className="App">
         <header>
           <Link className="Logo" to="/">
-            <img src="/images/doggy-daycare.png" alt="logo" />
+            <img src={process.env.PUBLIC_URL + "/images/doggy-daycare.png"} alt="logo" />
             <h2>Doggy Daycare</h2>
           </Link>
         </header>

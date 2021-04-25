@@ -35,7 +35,7 @@ const Dog = (props) => {
                 <p className="Title">Sex</p>
                 <div className="Content">
                   <p>{dog.sex}</p>
-                  <img src={dog.sex === "female" ? "../images/female.svg" : "../images/male.svg"} alt="sex" />
+                  <img src={dog.sex === "female" ? (process.env.PUBLIC_URL + "/images/female.svg") : (process.env.PUBLIC_URL + "/images/male.svg")} alt="sex" />
                 </div>
               </div>
 
@@ -44,7 +44,7 @@ const Dog = (props) => {
                   <p className="Title">Breed</p>
                   <div className="Content">
                     <p>{dog.breed}</p>
-                    <img src="../images/help.svg" alt="help" />
+                    <img src={process.env.PUBLIC_URL + "/images/help.svg"} alt="help" />
                   </div>
                 </a>
               </div>
@@ -63,13 +63,13 @@ const Dog = (props) => {
 
             <div className="OwnerInfo">
               <div className="Content">
-                <img src="../images/owner.svg" alt="owner" />
+                <img src={process.env.PUBLIC_URL + "/images/owner.svg"} alt="owner" />
                 <div>
                   <p className="Title">{dog.owner.name} {dog.owner.lastName}</p>
                   <p className="Text">{dog.owner.phoneNumber}</p>
                 </div>
                 <a href={"tel:" + dog.owner.phoneNumber}>
-                  <img className="Call" src="../images/phone.svg" alt="phone" />
+                  <img className="Call" src={process.env.PUBLIC_URL + "/images/phone.svg"} alt="phone" />
                 </a>
               </div>
             </div>

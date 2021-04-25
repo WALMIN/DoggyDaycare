@@ -2,8 +2,9 @@ import './Home.css';
 import {Link} from "react-router-dom";
 
 function Home(){
+
   return(
-    <div className="Home" style={{backgroundImage: `url("images/background.jpg")`}}>
+    <div className="Home" style={{backgroundImage: `url('${process.env.PUBLIC_URL}/images/background.jpg')`}}>
       <main>
         <h1 className="Title">Welcome!</h1>
         <p className="Text">Doggy Daycare helps you keep track<br />of all the dogs at your place.</p>
