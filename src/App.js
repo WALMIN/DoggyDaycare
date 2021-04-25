@@ -2,7 +2,8 @@ import "./App.css";
 import Home from "./components/Home";
 import Dogs from "./components/Dogs";
 import Dog from "./components/Dog";
-import { Route, BrowserRouter as Router, Link } from "react-router-dom"
+import NoPage from "./components/NoPage";
+import { Route, BrowserRouter as Router, Link, Switch } from "react-router-dom"
 
 function App() {
   return (
@@ -16,9 +17,12 @@ function App() {
         </header>
 
         <main>
+        <Switch>
           <Route path="/" exact> <Home /> </Route>
           <Route path="/register"> <Dogs /> </Route>
           <Route path="/dog/:chipNumber"> <Dog /> </Route>
+          <Route path="*" component={NoPage} />
+        </Switch>
         </main>
       </div>
     </Router>

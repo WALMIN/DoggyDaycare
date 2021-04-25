@@ -1,0 +1,20 @@
+.NoPage {
+
+  height: calc(100vh - 7.5vh);
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+}
+
+.NoPage .GoBack {
+
+  text-decoration: none;
+  color: var(--primary-color);
+
+}
