@@ -38,7 +38,6 @@
 
   width: 75vw;
   padding: 1.5vh 2.5vh;
-  margin-bottom: 2vh;
 
   background: var(--background-color);
   border: 0.5vh solid #ffffff;
@@ -60,6 +59,77 @@
 
 }
 
+.Dogs .Sort {
+
+  display: flex;
+  flex-direction: column wrap;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  margin-top: 2vmin;
+
+}
+
+.Dogs .Sort p {
+
+  margin-right: 2.5vmin;
+
+  color: #000000;
+  font-size: calc(10px + 1vmin);
+  font-weight: bold;
+
+}
+
+.Dogs .Sort .SortAscending {
+
+  margin-right: 2.5vmin;
+
+  background: transparent;
+  border: 0vmin solid transparent;
+  color: #000000;
+  font-size: calc(10px + 1vmin);
+  text-decoration: none;
+  cursor: pointer;
+
+}
+
+.Dogs .Sort .SortButton {
+
+  background: transparent;
+  border: 0vmin solid transparent;
+  color: #000000;
+  font-size: calc(10px + 1vmin);
+  text-decoration: none;
+  cursor: pointer;
+
+}
+
+.Dogs .Sort .SortButtonCurrent {
+
+  background: transparent;
+  border: 0vmin solid transparent;
+  color: #000000;
+  font-weight: bold;
+  font-size: calc(10px + 1vmin);
+  text-decoration: none;
+  cursor: pointer;
+
+}
+
+.Dogs .Sort button:focus {
+
+  outline: none;
+
+}
+
+.Dogs hr {
+
+  width: 85vw;
+  margin-bottom: 2vmin;
+
+}
+
 .Dogs main {
 
   display: flex;
@@ -78,7 +148,7 @@
   justify-content: space-around;
   width: 22vmin;
 
-  margin: 0.75vh;
+  margin: 0.75vmin;
 
   cursor: pointer;
   color: #000000;
