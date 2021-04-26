@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/DoggyDaycare/static/css/main.cc178b82.chunk.css",
-    "main.js": "/DoggyDaycare/static/js/main.73bbd55f.chunk.js",
-    "main.js.map": "/DoggyDaycare/static/js/main.73bbd55f.chunk.js.map",
+    "main.css": "/DoggyDaycare/static/css/main.9b13f9b2.chunk.css",
+    "main.js": "/DoggyDaycare/static/js/main.86c281fd.chunk.js",
+    "main.js.map": "/DoggyDaycare/static/js/main.86c281fd.chunk.js.map",
     "runtime-main.js": "/DoggyDaycare/static/js/runtime-main.bb6409c8.js",
     "runtime-main.js.map": "/DoggyDaycare/static/js/runtime-main.bb6409c8.js.map",
-    "static/js/2.3d0092a8.chunk.js": "/DoggyDaycare/static/js/2.3d0092a8.chunk.js",
-    "static/js/2.3d0092a8.chunk.js.map": "/DoggyDaycare/static/js/2.3d0092a8.chunk.js.map",
+    "static/js/2.9fedda5f.chunk.js": "/DoggyDaycare/static/js/2.9fedda5f.chunk.js",
+    "static/js/2.9fedda5f.chunk.js.map": "/DoggyDaycare/static/js/2.9fedda5f.chunk.js.map",
     "static/js/3.ae03df14.chunk.js": "/DoggyDaycare/static/js/3.ae03df14.chunk.js",
     "static/js/3.ae03df14.chunk.js.map": "/DoggyDaycare/static/js/3.ae03df14.chunk.js.map",
     "index.html": "/DoggyDaycare/index.html",
-    "static/css/main.cc178b82.chunk.css.map": "/DoggyDaycare/static/css/main.cc178b82.chunk.css.map",
-    "static/js/2.3d0092a8.chunk.js.LICENSE.txt": "/DoggyDaycare/static/js/2.3d0092a8.chunk.js.LICENSE.txt"
+    "static/css/main.9b13f9b2.chunk.css.map": "/DoggyDaycare/static/css/main.9b13f9b2.chunk.css.map",
+    "static/js/2.9fedda5f.chunk.js.LICENSE.txt": "/DoggyDaycare/static/js/2.9fedda5f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.bb6409c8.js",
-    "static/js/2.3d0092a8.chunk.js",
-    "static/css/main.cc178b82.chunk.css",
-    "static/js/main.73bbd55f.chunk.js"
+    "static/js/2.9fedda5f.chunk.js",
+    "static/css/main.9b13f9b2.chunk.css",
+    "static/js/main.86c281fd.chunk.js"
   ]
 }
