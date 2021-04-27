@@ -4,7 +4,7 @@ import { FetchData } from "../FetchData";
 
 const Dog = (props) => {
   let { chipNumber } = useParams();
-  const { data, dataLoading } = FetchData("https://raw.githubusercontent.com/WALMIN/DoggyDaycare/master/src/data/dogs.json");
+  const { data, dataLoading } = FetchData("https://api.jsonbin.io/b/608820de5210f622be3b3ec6");
 
   return(
     <div className="Dog">

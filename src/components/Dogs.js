@@ -8,7 +8,7 @@ function Dogs(){
   const [ sort, setSort ] = useState("present");
   const [ sortAscending, setSortAscending ] = useState(true);
   const [ sortAscendingText, setSortAscendingText ] = useState("↓");
-  const { data, dataLoading } = FetchData("https://raw.githubusercontent.com/WALMIN/DoggyDaycare/master/src/data/dogs.json");
+  const { data, dataLoading } = FetchData("https://api.jsonbin.io/b/608820de5210f622be3b3ec6");
 
   const getSort = (c, sort) => {
     switch(sort) {
