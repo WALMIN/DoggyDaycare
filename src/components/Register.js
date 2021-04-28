@@ -1,9 +1,9 @@
-import './Dogs.css';
+import './Register.css';
 import { useState } from 'react';
 import { Link } from "react-router-dom";
-import { FetchData } from "../FetchData";
+import { FetchData } from "../data/FetchData";
 
-function Dogs(){
+function Register(){
   const [ search, setSearch ] = useState("");
   const [ sort, setSort ] = useState("present");
   const [ sortAscending, setSortAscending ] = useState(true);
@@ -76,4 +76,4 @@ function Dogs(){
   );
 }
 
-export default Dogs;
+export default Register;

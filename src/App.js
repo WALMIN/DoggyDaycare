@@ -1,6 +1,6 @@
 import "./App.css";
 import Home from "./components/Home";
-import Dogs from "./components/Dogs";
+import Register from "./components/Register";
 import Dog from "./components/Dog";
 import NoPage from "./components/NoPage";
 import { Route, BrowserRouter as Router, Link, Switch } from "react-router-dom"
@@ -18,9 +18,9 @@ function App() {
 
         <main>
         <Switch>
-          <Route path="/DoggyDaycare" exact> <Home /> </Route>
-          <Route path="/DoggyDaycare/register"> <Dogs /> </Route>
-          <Route path="/DoggyDaycare/dog/:chipNumber"> <Dog /> </Route>
+          <Route exact path="/"> <Home /> </Route>
+          <Route exact path="/register"> <Register /> </Route>
+          <Route exact path="/dog/:chipNumber"> <Dog /> </Route>
           <Route path="*"> <NoPage /> </Route>
         </Switch>
         </main>

@@ -1,6 +1,6 @@
 import './Dog.css';
 import { Link, useParams } from "react-router-dom";
-import { FetchData } from "../FetchData";
+import { FetchData } from "../data/FetchData";
 
 const Dog = (props) => {
   let { chipNumber } = useParams();
