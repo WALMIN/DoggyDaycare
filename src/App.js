@@ -7,7 +7,7 @@ import { Route, BrowserRouter as Router, Link, Switch } from "react-router-dom"
 
 function App() {
   return (
-  <Router basename={process.env.PUBLIC_URL}>
+  <Router basename="/DoggyDaycare">
       <div className="App">
         <header>
           <Link className="Logo" to="/">
@@ -18,7 +18,7 @@ function App() {
 
         <main>
         <Switch>
-          <Route path="/" exact> <Home /> </Route>
+          <Route path="/" exact> <Home /> </Route>0
           <Route path="/register"> <Dogs /> </Route>
           <Route path="/dog/:chipNumber"> <Dog /> </Route>
           <Route path="*"> <NoPage /> </Route>

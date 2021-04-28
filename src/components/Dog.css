@@ -27,6 +27,7 @@
 .Dog h1 {
 
   margin: 0px;
+  margin-top: 1vmin;
 
   font-weight: bold;
   font-size: calc(10px + 4vmin);
