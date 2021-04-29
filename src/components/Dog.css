@@ -1,7 +1,63 @@
-.Dog main {
+.Dog {
 
   height: calc(100vh - 7.5vh - 5vmin);
   padding: 2.5vmin;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.Loading {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.LoadingLogo {
+
+  height: 25vh;
+  margin-top: 5vh;
+  pointer-events: none;
+
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .LoadingLogo {
+    animation: LoadingLogoSpin infinite 5s linear;
+
+  }
+
+}
+
+@keyframes LoadingLogoSpin {
+  from {
+    transform: rotate(0deg);
+
+  }
+
+  to {
+    transform: rotate(360deg);
+
+  }
+
+}
+
+.LoadingTitle {
+
+  font-size: calc(10px + 3vmin);
+
+}
+
+.Dog main {
+
+  height: 100%;
+  padding-top: 0px;
 
   display: flex;
   flex-direction: column;

@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 
 export const FetchData = (url) => {
   const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function fetchData() {
@@ -17,13 +16,12 @@ export const FetchData = (url) => {
       // Set data from local storage
       const jsonLocal = localStorage.getItem("data");
       setData(JSON.parse(jsonLocal));
-      setLoading(false);
 
     }
     fetchData();
 
   }, []);
 
-  return { data, loading };
+  return { data };
 
 };
