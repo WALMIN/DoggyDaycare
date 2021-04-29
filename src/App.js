@@ -3,11 +3,11 @@ import Home from "./components/Home";
 import Register from "./components/Register";
 import Dog from "./components/Dog";
 import NoPage from "./components/NoPage";
-import { Route, BrowserRouter as Router, Link, Switch } from "react-router-dom"
+import { Route, HashRouter as Router, Link, Switch } from "react-router-dom"
 
 function App() {
   return (
-  <Router basename={process.env.PUBLIC_URL}>
+  <Router basename="/">
       <div className="App">
         <header>
           <Link className="Logo" to="/">

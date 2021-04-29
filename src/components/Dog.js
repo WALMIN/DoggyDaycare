@@ -21,7 +21,7 @@ const Dog = (props) => {
               }
 
             })
-            .map((dog, key)=> (
+            .map((dog, key) => (
               <main key={key}>
                 <div>
                   <img className="DogImage" src={dog.img} alt="dog" />
