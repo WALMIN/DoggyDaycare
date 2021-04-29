@@ -8,9 +8,9 @@ function Home(){
       <main>
         <h1 className="Title">Welcome!</h1>
         <p className="Text">Doggy Daycare helps you keep track<br />of all the dogs at your place.</p>
-        <div>
+        <div className="HomeButtons">
           <Link className="Button" to="/register">See all the dogs</Link>
-          <Link className="Button" to="/">More info</Link>
+          <div className="Button" onClick={ () => { alert("I made this web app for my web application development project at IT-Högskolan Stockholm.\n\nDeveloped by Victor Bergene") }}>More info</div>
         </div>
       </main>
       <footer>

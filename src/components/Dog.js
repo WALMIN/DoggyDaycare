@@ -38,7 +38,7 @@ const Dog = (props) => {
                   </div>
 
                   <div className="Item">
-                    <a href={"https://www.petfinder.com/dog-breeds/" + dog.breed} target="_blank" rel="noopener noreferrer">
+                    <a href={"https://www.petfinder.com/dog-breeds/" + dog.breed.replace(" ", "-")} target="_blank" rel="noopener noreferrer">
                       <p className="Title">Breed</p>
                       <div className="Content">
                         <p>{dog.breed}</p>

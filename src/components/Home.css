@@ -43,6 +43,15 @@
 
 }
 
+.Home .HomeButtons {
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+
 .Home .Button {
 
   margin: 2vmin;
