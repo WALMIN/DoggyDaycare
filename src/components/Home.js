@@ -10,7 +10,7 @@ function Home(){
         <p className="Text">Doggy Daycare helps you keep track<br />of all the dogs at your place.</p>
         <div>
           <Link className="Button" to="/register">See all the dogs</Link>
-          <Link className="Button2" to="/">More info</Link>
+          <Link className="Button" to="/">More info</Link>
         </div>
       </main>
       <footer>

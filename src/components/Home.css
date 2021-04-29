@@ -48,28 +48,26 @@
   margin: 2vmin;
   padding: 1vmin 2vmin;
 
-  background: var(--primarydark-color);
-  border: 0.5vmin solid var(--primarydark-color);
+  background: var(--primary-color);
+  border: 0.25vmin solid var(--primary-color);
   color: #ffffff;
   border-radius: 0.5vmin;
   font-size: calc(10px + 1.25vmin);
   text-decoration: none;
   cursor: pointer;
 
+  -webkit-transition: all 0.5s ease;
+   -moz-transition: all 0.5s ease;
+   -ms-transition: all 0.5s ease;
+   transition: all 0.5s ease;
+
 }
 
-.Home .Button2 {
+.Home .Button:hover {
 
-  margin: 2vmin;
-  padding: 1vmin 2vmin;
-
-  background: #ffffff;
-  border: 0.5vmin solid var(--primarydark-color);
-  color: var(--primarydark-color);
-  border-radius: 0.5vmin;
-  font-size: calc(10px + 1.25vmin);
-  text-decoration: none;
-  cursor: pointer;
+  background: var(--primarydark-color);
+  border: 0.25vmin solid var(--primarydark-color);
+  box-shadow: 0.25vh 0.5vh 1vh var(--primarydark-color);
 
 }
 

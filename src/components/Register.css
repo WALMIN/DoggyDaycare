@@ -168,18 +168,6 @@
 
 }
 
-.DogItem:focus {
-
-  outline: none;
-
-}
-
-.DogItem:active {
-
-  transform: translate3d(0.1vh, 0.1vh, 0);
-
-}
-
 .DogItem .title {
 
   margin: 0px;
@@ -207,6 +195,17 @@
 
   border: 0.75vh solid #ffffff;
   border-radius: 50%;
-  box-shadow: 1vh 2vh 4vh #999999;
+  box-shadow: 0.25vh 0.5vh 1vh #aaaaaa;
+
+  -webkit-transition: all 0.5s ease;
+   -moz-transition: all 0.5s ease;
+   -ms-transition: all 0.5s ease;
+   transition: all 0.5s ease;
+
+}
+
+.DogItem img:hover  {
+
+  box-shadow: 0.5vh 1vh 2vh #aaaaaa;
 
 }

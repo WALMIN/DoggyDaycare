@@ -76,7 +76,7 @@
 
   border: 0.75vh solid #ffffff;
   border-radius: 50%;
-  box-shadow: 1vh 2vh 4vh #999999;
+  box-shadow: 1vh 2vh 4vh #aaaaaa;
 
 }
 
@@ -219,7 +219,6 @@
   cursor: pointer;
 
 }
-
 
 .Dog .DogChip {
 
